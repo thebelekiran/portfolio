@@ -22,6 +22,32 @@
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
+	    
+	    <script type="text/javascript">
+	    $(document).ready(function() {
+		    var ctrlDown = false,
+			ctrlKey = 17,
+			cmdKey = 91,
+			vKey = 86,
+			cKey = 67;
+
+		    $(document).keydown(function(e) {
+			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
+		    }).keyup(function(e) {
+			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
+		    });
+
+		    $(".no-copy-paste").keydown(function(e) {
+			if (ctrlDown && (e.keyCode == vKey || e.keyCode == cKey)) return false;
+		    });
+
+		    // Document Ctrl + C/V 
+		    $(document).keydown(function(e) {
+			if (ctrlDown && (e.keyCode == cKey)) console.log("Document catch Ctrl+C");
+			if (ctrlDown && (e.keyCode == vKey)) console.log("Document catch Ctrl+V");
+		    });
+		});
+	    </script>
     </head>
     <!-- END HEAD -->
 
@@ -104,7 +130,7 @@
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
-                        <div class="margin-b-60">
+                        <div class="margin-b-60" class="no-copy-paste">
                             <p>I'm Kiran Bele, Experienced Associate Consultant with Professional Post Graduate Diploma in Advanced Computing (CDAC) from VITA, Juhu and Bachelor Degree in Information Technology.</p>
 
 							<p>Currently working as Full Stack Developer and work expertise in Java and Advance Java (spring, hibernate, maven) for back-end development and JSP, HTML, CSS, jQuery, JSON, Ajax, @ngular.js/node.js technologies for the front end development. Microsoft SQL Server and Oracle 11g for DB-related services and operations like DDL, DML, DCL, and PL/SQL technologies used for database development. we use the VisualSVN server for the code repository. worked with Active directory LDAP for Authentication and Authorization (Single Sign-On).</p>
