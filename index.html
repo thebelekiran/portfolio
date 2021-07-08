@@ -23,31 +23,6 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
 	    
-	    <script type="text/javascript">
-	    $(document).ready(function() {
-		    var ctrlDown = false,
-			ctrlKey = 17,
-			cmdKey = 91,
-			vKey = 86,
-			cKey = 67;
-
-		    $(document).keydown(function(e) {
-			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
-		    }).keyup(function(e) {
-			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
-		    });
-
-		    $(".no-copy-paste").keydown(function(e) {
-			if (ctrlDown && (e.keyCode == vKey || e.keyCode == cKey)) return false;
-		    });
-
-		    // Document Ctrl + C/V 
-		    $(document).keydown(function(e) {
-			if (ctrlDown && (e.keyCode == cKey)) console.log("Document catch Ctrl+C");
-			if (ctrlDown && (e.keyCode == vKey)) console.log("Document catch Ctrl+V");
-		    });
-		});
-	    </script>
     </head>
     <!-- END HEAD -->
 
@@ -529,6 +504,31 @@
         <script src="js/components/progress-bar.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
+	    <script type="text/javascript">
+	    $(document).ready(function() {
+		    var ctrlDown = false,
+			ctrlKey = 17,
+			cmdKey = 91,
+			vKey = 86,
+			cKey = 67;
+
+		    $(document).keydown(function(e) {
+			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = true;
+		    }).keyup(function(e) {
+			if (e.keyCode == ctrlKey || e.keyCode == cmdKey) ctrlDown = false;
+		    });
+
+		    $(".no-copy-paste").keydown(function(e) {
+			if (ctrlDown && (e.keyCode == vKey || e.keyCode == cKey)) return false;
+		    });
+
+		    // Document Ctrl + C/V 
+		    $(document).keydown(function(e) {
+			if (ctrlDown && (e.keyCode == cKey)) console.log("Document catch Ctrl+C");
+			if (ctrlDown && (e.keyCode == vKey)) console.log("Document catch Ctrl+V");
+		    });
+		});
+	    </script>
 
     </body>
     <!-- END BODY -->
