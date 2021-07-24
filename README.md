@@ -1,8 +1,8 @@
-- 👋 Hi, I’m @thebelekiran
-- 👀 I’m interested in Programming and Developement.
-- 🌱 I’m currently learning Agile
-- 💞️ I’m looking to collaborate on java spring boot and angular projects.
-- 📫 How to reach me => mail on belekiran@live.com
+- 👋 Hi, I’m Kiran Bele
+- 👀 I’m interested in Full stack Developement using SpringMVC, SpringBoot and AngularJS, react.js and MS SQL Server 2016.
+- 🌱 I’m currently learning AngularJS, react.js.
+- 💞️ I’m looking to collaborate on Spring Boot and Angular 11 Application Development.
+- 📫 You can reach me on belekiran@live.com
 
 <!---
 thebelekiran/thebelekiran is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
